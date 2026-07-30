@@ -50,9 +50,12 @@ repos:
       - id: snakefmt
 
   # ── Shared project/py/snakemake policy hooks ───────────────────────────────
-  # combine_fastas.py is invoked via Snakemake's `script:` directive (no
-  # argv/CLI, no shebang, never marked executable), so the py-* hooks below
-  # (which only check executable files) naturally skip it.
+  # combine_sequences.py is invoked via Snakemake's `script:` directive (no
+  # argv/CLI, no shebang, never marked executable), so py-shebang/
+  # py-help-version (which only check executable files) naturally skip it.
+  # py-metadata does not gate on the executable bit, so .tests/ (pytest
+  # helper modules + test files, not project deliverables) is excluded
+  # explicitly below.
   - repo: https://github.com/Marc-commits/pre-commit-hooks
     rev: v0.3.3
     hooks:
@@ -65,5 +68,6 @@ repos:
       - id: py-marimo-check
       - id: py-help-version
       - id: py-metadata
+        exclude: '(^|/)(tests|\.tests)/'
       - id: readme-no-local-paths
       - id: readme-url-check

@@ -18,6 +18,10 @@ Input (snakemake.input):
 
 Output (snakemake.output):
   fasta — combined FASTA (records from all inputs, in input order)
+
+version: 0.1.0
+author: Marc Broghammer
+email: marc.broghammer@gmx.de
 """
 
 from pathlib import Path

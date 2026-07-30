@@ -17,8 +17,7 @@ this module only knows about FASTA files and bowtie2.
 ## Usage as a standalone workflow
 
 ```bash
-snakemake --use-conda --conda-frontend mamba --conda-prefix ~/.snakemake \
-  --latency-wait 30 bowtie2_build_index_workflow_all
+snakemake --use-conda --latency-wait 30 bowtie2_build_index_workflow_all
 ```
 
 Edit `config/config.yaml` (`sequences`, `index_name`) first, or override on
