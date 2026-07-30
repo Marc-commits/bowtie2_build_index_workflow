@@ -1,0 +1,4 @@
+---
+sequences:
+  - resources/unused.fasta
+index_name: results/index/test

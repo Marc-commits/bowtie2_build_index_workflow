@@ -1,0 +1,6 @@
+---
+sequences:
+  - resources/a.fasta
+  - resources/b.fasta
+  - resources/c.gb
+index_name: results/index/test

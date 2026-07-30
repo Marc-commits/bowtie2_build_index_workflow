@@ -1,0 +1,12 @@
+---
+# Example/default config for standalone runs of this module.
+# Consuming workflows normally pass an equivalent flat dict via the
+# Snakemake `module: config:` block instead of this file.
+
+# Each entry is parsed as GenBank if its extension is .gb/.gbk/.genbank,
+# else as FASTA. GenBank inputs contribute sequence only (features/
+# annotations are ignored by this module).
+sequences:
+  - resources/example.fasta
+
+index_name: results/index/example

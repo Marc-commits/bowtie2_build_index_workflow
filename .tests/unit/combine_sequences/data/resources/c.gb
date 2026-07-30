@@ -1,0 +1,12 @@
+LOCUS       plasmid_gb                16 bp    DNA              UNK 01-JAN-1980
+DEFINITION  test plasmid.
+ACCESSION   plasmid_gb
+VERSION     plasmid_gb
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+ORIGIN
+        1 ccccaaaagg ggtttt
+//
