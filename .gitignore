@@ -48,7 +48,7 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/linux
 origin
-*.txt
+/*.txt
 
 # Project-specific: standalone/module run outputs, not source
 /results/
@@ -60,6 +60,3 @@ annotation/
 Rplots.pdf
 __pycache__/
 .pytest_cache/
-
-# conda env pin files are tracked despite the *.txt rule above
-!workflow/envs/*.pin.txt
