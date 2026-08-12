@@ -5,6 +5,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added (Unreleased)
+
+- `justfile`: added a `version-map:` recipe to (re)generate
+  `.version-map` via `grep` over tracked files.
+
 ### Fixed
 
 - `bowtie2_build_index_workflow_all` docstring no longer recommends that
