@@ -5,6 +5,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- `bowtie2_build_index_workflow_all` docstring no longer recommends that
+  consuming workflows bypass this aggregate rule; it previously endorsed
+  depending on `bowtie2_build`'s output directly, which broke the intended
+  `parent_all -> submodule_all -> rule` dependency hierarchy for consumers.
+
 ## [0.1.0] - 2026-07-30
 
 ### Added
