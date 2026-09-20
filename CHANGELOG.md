@@ -5,13 +5,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
-### Added
-
-- Added .github/workflows/pre-commit.yml: runs `uvx pre-commit run --all-files` on `runs-on: self-hosted` for every pull request.
-
-
 ### Added (Unreleased)
 
+- Added .github/workflows/pre-commit.yml: runs `uvx pre-commit run
+  --all-files` on `runs-on: self-hosted` for every pull request.
 - `justfile`: added `env:`/`lint:` recipes to dry-run validate
   `workflow/envs/*.yaml` conda envs and lint the Snakemake workflow.
 - `justfile`: added a `version-map:` recipe to (re)generate
