@@ -23,3 +23,4 @@
   `config/example.config.yaml`
 - [ ] Decide: migrate `bowtie2_build` rule to the `bio/bowtie2/build`
   snakemake-wrapper (flag-and-ask, needs approval)
+- [ ] Confirm a self-hosted runner labeled 'self-hosted' is registered and that this repo's first PR exercises .github/workflows/pre-commit.yml end-to-end.
