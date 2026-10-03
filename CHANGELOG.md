@@ -12,6 +12,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `justfile`: added a `version-map:` recipe to (re)generate
   `.version-map` via `grep` over tracked files.
 
+### Changed
+
+- `bowtie2_build`: removed the `benchmark:` directive. Snakemake does not
+  allow a rule with a benchmark to be cache-eligible
+  ([snakemake#2238](https://github.com/snakemake/snakemake/issues/2238)), so
+  this lets consuming workflows opt in to between-workflow caching with
+  `use rule bowtie2_build from ... with: cache: True`. `combine_sequences`
+  keeps its benchmark.
+
 ### Fixed
 
 - `bowtie2_build_index_workflow_all` docstring no longer recommends that

@@ -12,8 +12,8 @@
 
 ## Workflow audit findings (2026-09-19, see `2026-09-19_AUDIT.md`)
 
-- [ ] Run `snakefmt` on `Snakefile` and `workflow/rules/build_index.smk`
-  (2 files flagged by `--check`)
+- [ ] Run `snakefmt` on `Snakefile` (flagged by `--check`;
+  `workflow/rules/build_index.smk` done)
 - [ ] Add `sys.stderr` redirection to `snakemake.log[0]` in
   `combine_sequences.py` (log: declared but unused)
 - [ ] Regenerate `workflow/rulegraph.svg` (currently 0 bytes) and embed it
