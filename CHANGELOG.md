@@ -20,6 +20,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   this lets consuming workflows opt in to between-workflow caching with
   `use rule bowtie2_build from ... with: cache: True`. `combine_sequences`
   keeps its benchmark.
+- Rulegraph regeneration moved from `.envrc` into the justfile recipe
+  `just chore`; direnv no longer rewrites `workflow/rulegraph.svg` on `cd`.
 
 ### Fixed
 
