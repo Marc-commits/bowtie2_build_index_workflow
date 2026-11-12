@@ -29,6 +29,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   consuming workflows bypass this aggregate rule; it previously endorsed
   depending on `bowtie2_build`'s output directly, which broke the intended
   `parent_all -> submodule_all -> rule` dependency hierarchy for consumers.
+- justfile rulegraph recipes no longer discard snakemake stderr and now fail
+  on pipeline errors (`pipefail`), so a failed rulegraph is reported.
 
 ## [0.1.0] - 2026-07-30
 
