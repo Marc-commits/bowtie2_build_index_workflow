@@ -7,6 +7,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added (Unreleased)
 
+- `workflow/schemas/config.schema.yaml` and a `validate()` call in the
+  `Snakefile`: `sequences` and `index_name` are now checked at parse time,
+  including when the workflow is used as a module. `tests/test_config_schema.py`
+  keeps schema and `config/config.yaml` keys in sync.
 - `justfile`: added `env:`/`lint:` recipes to dry-run validate
   `workflow/envs/*.yaml` conda envs and lint the Snakemake workflow.
 - `justfile`: added a `version-map:` recipe to (re)generate

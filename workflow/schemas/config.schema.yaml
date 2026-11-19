@@ -1,0 +1,25 @@
+---
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Config schema for bowtie2_build_index_workflow
+type: object
+required:
+  - sequences
+  - index_name
+
+additionalProperties: false
+
+properties:
+  sequences:
+    type: array
+    description: >
+      FASTA or GenBank (.gb/.gbk/.genbank) files concatenated into one
+      reference before indexing
+    minItems: 1
+    items:
+      type: string
+
+  index_name:
+    type: string
+    description: >
+      Output prefix of the bowtie2 index (also names the combined FASTA)
+    minLength: 1

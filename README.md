@@ -22,6 +22,7 @@ snakemake --use-conda --latency-wait 30 bowtie2_build_index_workflow_all
 
 Edit `config/config.yaml` (`sequences`, `index_name`) first, or override on
 the command line with `--config sequences='[a.fasta,b.gb]' index_name=...`.
+The config is validated against `workflow/schemas/config.schema.yaml`.
 
 ## Usage as a Snakemake module (git submodule)
 
