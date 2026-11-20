@@ -5,7 +5,9 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
-### Added (Unreleased)
+## [0.2.0] - 2026-11-20
+
+### Added (0.2.0)
 
 - `workflow/schemas/config.schema.yaml` and a `validate()` call in the
   `Snakefile`: `sequences` and `index_name` are now checked at parse time,
