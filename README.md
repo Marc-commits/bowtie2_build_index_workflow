@@ -44,11 +44,3 @@ use rule * from bowtie2 as bowtie2_*
 Config passed to the module must be a flat dict matching the keys above —
 the consuming workflow does any nesting/renaming at its own `module:`
 config line, not this module.
-
-## Tests
-
-- `tests/` — pytest unit tests for the pure functions in
-  `workflow/scripts/combine_sequences.py`.
-- `.tests/unit/` — Snakemake rule-level integration tests
-  (`pytest .tests/unit`), generated/maintained following
-  `snakemake --generate-unit-tests` conventions.

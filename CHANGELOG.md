@@ -7,6 +7,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed (Unreleased)
 
+- README trimmed to user-facing content (54 -> 46 lines): the "Tests"
+  section (pytest layout) is removed.
 - `.pre-commit-config.yaml`: `Marc-commits/pre-commit-hooks` bumped from v0.3.3
   to v0.10.0; new `snakemake-config-validate` hook validates the config files
   against `workflow/schemas/config.schema.yaml` at commit time.
